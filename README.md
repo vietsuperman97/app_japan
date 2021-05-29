@@ -182,3 +182,4 @@ curl https://api.rollbar.com/api/1/sourcemap \
 
 3. Create a new application on appstore connect and google play console.
    Note: (Android) You have to create the application, upload keystore on app signing tab and upload app.aab once through the Play Console before using Fastlane. app.aab can be found on circleCI artifact
+# app_japan
