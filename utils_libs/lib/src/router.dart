@@ -4,4 +4,5 @@ class ROUTE_NAMES {
   static const String LOGIN = '/login';
   static const String MENU = 'menu';
   static const String MAIN = '/main';
+  static const String TEST = '/test';
 }

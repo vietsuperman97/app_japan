@@ -5,8 +5,9 @@ import 'package:flutter/material.dart';
 class WidgetTowItem extends StatelessWidget {
   final String? image, title, content, time;
   final Color? colorText, colorIcon;
+  final bool isLoading;
 
-  WidgetTowItem({this.title, this.content, this.time, this.image, this.colorText = COLORS.WHITE,this.colorIcon = COLORS.PRIMARY_COLOR});
+  WidgetTowItem({this.title, this.content, this.time, this.image, this.colorText = COLORS.WHITE,this.colorIcon = COLORS.PRIMARY_COLOR, required this.isLoading});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +15,14 @@ class WidgetTowItem extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
+        isLoading ? Container(
+          height: 50,
+          width: 50,
+          decoration: BoxDecoration(
+            color: Colors.black,
+            borderRadius: BorderRadius.circular(8),
+          ),
+        ) : Container(
           height: 50,
           width: 50,
           decoration: BoxDecoration(
@@ -39,13 +47,27 @@ class WidgetTowItem extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
+                      isLoading ? Container(
+                        height: 25,
+                        width: 50,
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ) : Text(
                           title!,
                           style: AppStyle.DEFAULT_MEDIUM_BOLD.copyWith(color: colorText)
                       ),
                       Align(
                         alignment: Alignment.centerRight,
-                        child: Text(
+                        child: isLoading ? Container(
+                          height: 25,
+                          width: 40,
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                        ) : Text(
                             time!,
                             style: AppStyle.DEFAULT_SMALLs.copyWith(color: colorText)
                         ),
@@ -54,7 +76,27 @@ class WidgetTowItem extends StatelessWidget {
                   ),
                 ),
                 AppValue.vSpaceTiny,
-                Container(
+                isLoading ? Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      height: 25,
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                    ),
+                    AppValue.vSpace(3),
+                    Container(
+                      height: 25,
+                      width: AppValue.widths/2,
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                    )
+                  ],
+                ) : Container(
                   child: Text(
                       content!,
                       style: AppStyle.DEFAULT_SMALLs.copyWith(color: colorText),
