@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "D:\\congviec\\app_japan\\build\\app\\intermediates\\res\\merged\\debug\\raw_keep.xml.flat",
+        "source": "D:\\congviec\\app_japan\\android\\app\\src\\main\\res\\raw\\keep.xml"
+    },
+    {
+        "merged": "D:\\congviec\\app_japan\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\congviec\\app_japan\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\congviec\\app_japan\\build\\app\\intermediates\\res\\merged\\debug\\drawable_launch_background.xml.flat",
+        "source": "D:\\congviec\\app_japan\\android\\app\\src\\main\\res\\drawable\\launch_background.xml"
+    },
+    {
+        "merged": "D:\\congviec\\app_japan\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_logo.png.flat",
+        "source": "D:\\congviec\\app_japan\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\logo.png"
+    },
+    {
+        "merged": "D:\\congviec\\app_japan\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\congviec\\app_japan\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\congviec\\app_japan\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\congviec\\app_japan\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\congviec\\app_japan\\build\\app\\intermediates\\res\\merged\\debug\\raw_flutter_local_notifications_example_android_app_src_main_res_raw_slow_spring_board.mp3.flat",
+        "source": "D:\\congviec\\app_japan\\android\\app\\src\\main\\res\\raw\\flutter_local_notifications_example_android_app_src_main_res_raw_slow_spring_board.mp3"
+    },
+    {
+        "merged": "D:\\congviec\\app_japan\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\congviec\\app_japan\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\congviec\\app_japan\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_logo.png.flat",
+        "source": "D:\\congviec\\app_japan\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\logo.png"
+    },
+    {
+        "merged": "D:\\congviec\\app_japan\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_logo.png.flat",
+        "source": "D:\\congviec\\app_japan\\android\\app\\src\\main\\res\\mipmap-xhdpi\\logo.png"
+    },
+    {
+        "merged": "D:\\congviec\\app_japan\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\congviec\\app_japan\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\congviec\\app_japan\\build\\app\\intermediates\\res\\merged\\debug\\drawable_app_icon.png.flat",
+        "source": "D:\\congviec\\app_japan\\android\\app\\src\\main\\res\\drawable\\app_icon.png"
+    },
+    {
+        "merged": "D:\\congviec\\app_japan\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_logo.png.flat",
+        "source": "D:\\congviec\\app_japan\\android\\app\\src\\main\\res\\mipmap-mdpi\\logo.png"
+    },
+    {
+        "merged": "D:\\congviec\\app_japan\\build\\app\\intermediates\\res\\merged\\debug\\drawable-v21_launch_background.xml.flat",
+        "source": "D:\\congviec\\app_japan\\android\\app\\src\\main\\res\\drawable-v21\\launch_background.xml"
+    },
+    {
+        "merged": "D:\\congviec\\app_japan\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_logo.png.flat",
+        "source": "D:\\congviec\\app_japan\\android\\app\\src\\main\\res\\mipmap-hdpi\\logo.png"
+    }
+]
