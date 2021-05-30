@@ -7,8 +7,9 @@ class WidgetThreeItem extends StatelessWidget {
   final double? price;
   final Color? colorText, colorImage;
   final Function? onTap;
+  final bool isLoading;
 
-  WidgetThreeItem({this.title, this.subTitle, this.image, this.price, this.onTap, this.colorText = COLORS.WHITE, this.colorImage = COLORS.PRIMARY_COLOR});
+  WidgetThreeItem({this.title, this.subTitle, this.image, this.price, this.onTap, this.colorText = COLORS.WHITE, this.colorImage = COLORS.PRIMARY_COLOR, required this.isLoading});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,14 @@ class WidgetThreeItem extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
+            isLoading ? Container(
+              height: 110,
+              width: 110,
+              decoration: BoxDecoration(
+                color: Colors.black,
+                borderRadius: BorderRadius.circular(8),
+              ),
+            ) : Container(
               height: 110,
               width: 110,
               decoration: BoxDecoration(
@@ -35,17 +43,38 @@ class WidgetThreeItem extends StatelessWidget {
               ),
             ),
             AppValue.vSpaceTiny,
-            Text(
+            isLoading ? Container(
+              height: 15,
+              width: 80,
+              decoration: BoxDecoration(
+                color: Colors.black,
+                borderRadius: BorderRadius.circular(8),
+              ),
+            ) : Text(
                 title!,
                 style: AppStyle.DEFAULT_SMALLs.copyWith(color: colorText)
             ),
             AppValue.vSpaceTiny,
-            Text(
+            isLoading ? Container(
+              height: 15,
+              width: 80,
+              decoration: BoxDecoration(
+                color: Colors.black,
+                borderRadius: BorderRadius.circular(8),
+              ),
+            ) : Text(
                 subTitle!,
                 style: AppStyle.DEFAULT_SMALLs.copyWith(color: colorText)
             ),
             AppValue.vSpaceTiny,
-            Text(
+            isLoading ? Container(
+              height: 15,
+              width: 60,
+              decoration: BoxDecoration(
+                color: Colors.black,
+                borderRadius: BorderRadius.circular(8),
+              ),
+            ) : Text(
                 price.toString() + MESSAGES.YEN_DISCOUNT,
                 style: AppStyle.DEFAULT_SMALLs_BOLD.copyWith(color: colorText)
             ),

@@ -9,6 +9,14 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
 
+  bool _isLoading = true;
+
+  void _toggleLoading() {
+    setState(() {
+      _isLoading = !_isLoading;
+    });
+  }
+
   @override
   void initState() {
     super.initState();
@@ -16,36 +24,27 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
+    Future.delayed(Duration(seconds: 3), () {
+      setState(() {
+        _isLoading = false;
+      });
+    });
     return Scaffold(
-      appBar: AppBar(
-        toolbarHeight: 0.0,
-        automaticallyImplyLeading: false,
-        backgroundColor: COLORS.PRIMARY_COLOR,
-        elevation: 0.0,
-      ),
-      body: SafeArea(
+      body: Shimmer(
+        linearGradient: _shimmerGradient,
         child: SafeArea(
           top: true,
           child: Container(
             color: COLORS.PRIMARY_COLOR,
             padding: EdgeInsets.all(15),
-            child: Column(
+            child: ListView(
               children: [
-                Expanded(
-                  child: SingleChildScrollView(
-                    physics: BouncingScrollPhysics(),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        WidgetOne(),
-                        AppValue.vSpaceTiny,
-                        WidgetTwo(),
-                        AppValue.vSpaceTiny,
-                        WidgetThree(),
-                      ],
-                    ),
-                  ),
-                ),
+                WidgetOne(loading: _isLoading,),
+                AppValue.vSpaceTiny,
+                WidgetTwo(loading: _isLoading,),
+                AppValue.vSpaceTiny,
+                WidgetThree(loading: _isLoading,),
+                AppValue.vSpaceTiny,
               ],
             ),
           ),
@@ -55,3 +54,19 @@ class _MainScreenState extends State<MainScreen> {
   }
 
 }
+
+const _shimmerGradient = LinearGradient(
+  colors: [
+    COLORS.GREY_300,
+    COLORS.GREY_400,
+    COLORS.GREY_300,
+  ],
+  stops: [
+    0.1,
+    0.3,
+    0.4,
+  ],
+  begin: Alignment(-1.0, -0.3),
+  end: Alignment(1.0, 0.3),
+  tileMode: TileMode.clamp,
+);
