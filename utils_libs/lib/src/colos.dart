@@ -13,4 +13,5 @@ class COLORS {
   static const  ORANGE = Color(0xffffa500);
   static const  GREY_300 = Color(0xffe0e0e0);
   static const  GREY_400 = Color(0xffbdbdbd);
+  static const  TEXT_COLOR = Color(0xff97ADB6);
 }

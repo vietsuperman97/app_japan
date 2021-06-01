@@ -15,4 +15,8 @@ class AppNavigator {
 
   static navigateMain() async => await Get.offAllNamed(ROUTE_NAMES.MAIN);
 
+  static navigateScreenOne() async => await Get.toNamed(ROUTE_NAMES.SCREEN_ONE);
+
+  static navigateScreenRegister() async => await Get.toNamed(ROUTE_NAMES.REGISTER);
+
 }

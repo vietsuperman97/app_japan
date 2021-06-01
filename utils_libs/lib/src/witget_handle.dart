@@ -159,3 +159,18 @@ class WidgetContainerCenter extends StatelessWidget {
         ),
       );
 }
+
+class Button extends StatelessWidget {
+  final VoidCallback onTap;
+  final Widget child;
+  final BorderRadius borderRadius;
+  Button({this.onTap, this.child, this.borderRadius});
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      borderRadius: borderRadius ?? null,
+      onTap: onTap,
+      child: child,
+    );
+  }
+}

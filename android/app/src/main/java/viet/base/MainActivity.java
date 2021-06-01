@@ -1,4 +1,4 @@
-package com.base;
+package viet.base;
 
 import io.flutter.embedding.android.FlutterActivity;
 // @dart=2.9
