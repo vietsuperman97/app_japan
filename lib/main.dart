@@ -32,11 +32,7 @@ Future main() async {
       ],
       child: MultiBlocProvider(
         providers: [
-          BlocProvider<RegisterBloc>(
-            create: (context) => RegisterBloc(
-              userRepository: userRepository,
-            ),
-          ),
+
         ],
         child: MyApp(),
       ),
