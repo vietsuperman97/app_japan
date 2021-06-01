@@ -109,7 +109,6 @@ class _WidgetRegisterFormState extends State<WidgetRegisterForm> {
       hint: MESSAGES.PASSWORD_HINT,
       obscureText: obscurePassword,
       focusNode: _passwordFocusNode,
-      errorText: 'ádasda',
       endIcon: Button(
         onTap: () => setState(() => obscurePassword = !obscurePassword),
         child: Icon(

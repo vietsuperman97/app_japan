@@ -30,12 +30,7 @@ Future main() async {
           )..add(AuthenticationStateInit()),
         ),
       ],
-      child: MultiBlocProvider(
-        providers: [
-
-        ],
-        child: MyApp(),
-      ),
+      child: MyApp(),
     ),
   );
 }

@@ -9,16 +9,8 @@ class ScreenRegister extends StatefulWidget {
 }
 
 class _ScreenRegisterState extends State<ScreenRegister> {
-
-  bool _isLoading = true;
-
   @override
   Widget build(BuildContext context) {
-    Future.delayed(Duration(seconds: 3), () {
-      setState(() {
-        _isLoading = false;
-      });
-    });
     return Scaffold(
       body: SafeArea(
         top: true,
@@ -44,19 +36,3 @@ class _ScreenRegisterState extends State<ScreenRegister> {
   }
 
 }
-
-const _shimmerGradient = LinearGradient(
-  colors: [
-    COLORS.GREY_300,
-    COLORS.GREY_400,
-    COLORS.GREY_300,
-  ],
-  stops: [
-    0.1,
-    0.3,
-    0.4,
-  ],
-  begin: Alignment(-1.0, -0.3),
-  end: Alignment(1.0, 0.3),
-  tileMode: TileMode.clamp,
-);

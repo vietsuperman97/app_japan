@@ -21,7 +21,14 @@ class _WidgetAreaSelectState extends State<WidgetAreaSelect> {
     }
     return items;
   }
-  var _value = '東京';
+
+  @override
+  void initState(){
+    _value = widget.item[0];
+    super.initState();
+  }
+
+  late String _value;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -44,6 +51,7 @@ class _WidgetAreaSelectState extends State<WidgetAreaSelect> {
             _value = value!;
           });
         },
+        value: _value,
         isExpanded: true,
         underline: Container(),
         elevation: 2,
