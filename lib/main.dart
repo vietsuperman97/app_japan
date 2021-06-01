@@ -32,10 +32,9 @@ Future main() async {
       ],
       child: MultiBlocProvider(
         providers: [
-          BlocProvider<LoginBloc>(
-            create: (context) => LoginBloc(
+          BlocProvider<RegisterBloc>(
+            create: (context) => RegisterBloc(
               userRepository: userRepository,
-              localRepository: const EventRepositoryStorage(),
             ),
           ),
         ],
@@ -60,8 +59,12 @@ class MyApp extends StatelessWidget {
           page: () => MainScreen(),
         ),
         GetPage(
-          name: ROUTE_NAMES.SPLASH,
-          page: () => SplashPage(),
+          name: ROUTE_NAMES.SCREEN_ONE,
+          page: () => ScreenOne(),
+        ),
+        GetPage(
+          name: ROUTE_NAMES.REGISTER,
+          page: () => ScreenRegister(),
         ),
       ],
     );

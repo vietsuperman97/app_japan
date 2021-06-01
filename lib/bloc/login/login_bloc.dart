@@ -28,9 +28,9 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
   @override
   Stream<LoginState> mapEventToState(LoginEvent event) async* {
     if (event is EmailChanged) {
-      final email = UserName.dirty(event.email);
+      final email = Email.dirty(event.email);
       yield state.copyWith(
-        email: email.valid ? email : UserName.pure(event.email),
+        email: email.valid ? email : Email.pure(event.email),
         status: Formz.validate([email, state.password]),
       );
     } else if (event is PasswordChanged) {
@@ -40,7 +40,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
         status: Formz.validate([state.email, password]),
       );
     } else if (event is EmailUnfocused) {
-      final email = UserName.dirty(state.email.value);
+      final email = Email.dirty(state.email.value);
       yield state.copyWith(
         email: email,
         status: Formz.validate([email, state.password]),

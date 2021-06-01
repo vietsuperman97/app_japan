@@ -11,13 +11,13 @@ class MESSAGES {
   static const String CHECK_COMFIRM_PASS = "Mật khẩu trống hoặc không giống nhau";
   static const String PHONE = "Số điện thoại";
   static const String BIRTHDAY = "Ngày sinh";
-  static const String PASSWORD = "Mật khẩu";
+  //static const String PASSWORD = "Mật khẩu";
   static const String PASSWORD_REQUEST = "Vui lòng nhập mật khẩu";
   static const String PASSWORD_OLD = "Mật khẩu cũ";
   static const String PASSWORD_NEW = "Mật khẩu mới";
   static const String PASSWORD_NEW_AGAIN = "Nhập lại mật khẩu mới";
   static const String CONFIRM_PASSWORD_NEW= "Bạn xác nhận đổi mật khẩu mới";
-  static const String CONFIRM_PASSWORD = "Nhập lại mật khẩu";
+  //static const String CONFIRM_PASSWORD = "Nhập lại mật khẩu";
   static const String REMEMBER_PASSWORD = "Nhớ mật khẩu";
   static const String FORGOT_PASSWORD = "Quên mật khẩu";
   static const String TITLE_FORGOT_PASSWORD = "Khách hàng vui lòng nhập email để tìm tài khoản";
@@ -28,7 +28,7 @@ class MESSAGES {
   static const String OR_LOGIN_WITH = "Hoặc đăng nhập bằng";
   static const String NO_HAVE_ACCOUNT = "Bạn chưa có tài khoản? ";
   static const String HAVE_ACCOUNT = "Bạn đã có tài khoản? ";
-  static const String REGISTER = "Đăng ký";
+  //static const String REGISTER = "Đăng ký";
   static const String DIVIDER = "--  --  --  --  --  --  --  -- -- -- -- -- -- -- --";
   static const String CONFIRMATION_EMAIL = "Xác nhận email";
   static const String CONFIRMATION_CODE_MESSAGE = "Mã Xác nhận đã được gửi về email";
@@ -80,4 +80,19 @@ class MESSAGES {
   static const String TEXT = 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキ';
   static const String COUPON_NAME = 'クーポン名';
   static const String YEN_DISCOUNT = '円引/ℓ';
+  static const String MEMBER_REGISTER = '会員登録';
+  static const String MAIL_ADDRESS = 'メールアドレス';
+  static const String PASSWORD = 'パスワード';
+  static const String PASSWORD_HINT = '英数を含む8〜20文字';
+  static const String CONFIRM_PASSWORD = 'パスワードの確認';
+  static const String GENDER = '性別';
+  static const String FEMALE = '女性';
+  static const String MALE = '男性';
+  static const String NOT_ANSWER = '回答しない';
+  static const String AREA_SELECTION = 'エリアの選択';
+  static const String PLEASE_SELECT = '選択してください';
+  static const String AGE = '年代';
+  static const String REGISTER = '登録する';
+  static const String PLEASE_ENTER_ERROR = '入力してください';
+  static const String PLEASE_SELECT_ERROR = '選択してください';
 }
